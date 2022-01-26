@@ -1,0 +1,10 @@
+clear
+reset
+as q2.asm
+script mem_init_1.lcs
+load q2.obj
+set pc x3000
+list x301c
+b set STOP
+continue
+script mem_test_1.lcs
